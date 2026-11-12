@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Login</title><script src="./support.js"></script></head><body><x-dc><helmet><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><style>body{margin:0;font-family:Inter,system-ui,sans-serif;color:#14181F;background:#F4F6F9}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 32px;background:#fff;border-bottom:1px solid #DDE2EA}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:17px}
+.card{background:#fff;border:1px solid #DDE2EA;border-radius:12px;padding:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:8px;border:1px solid #1F4FA8;background:#1F4FA8;color:#fff;font:600 14px Inter,sans-serif;cursor:pointer}
+.btn.sec{background:#fff;color:#1F4FA8}.btn.red{background:#B42318;border-color:#B42318}.btn.sm{min-height:44px;padding:0 14px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.ok{background:#E3F4EA;color:#14693A}.bad{background:#FDE8E6;color:#9B1C12}.warn{background:#FFF1D6;color:#6B3F00}.mute{background:#E9EDF3;color:#3C4757}.info{background:#E4EDFC;color:#1B3F8B}
+.dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+input,select{min-height:44px;border:1px solid #8A95A6;border-radius:8px;padding:0 12px;font:400 14px Inter,sans-serif;box-sizing:border-box;width:100%;background:#fff}
+input[type=checkbox],input[type=radio]{width:18px;min-height:18px;padding:0;margin:0}
+label{display:block;font-size:13px;font-weight:600;margin:0 0 6px;color:#3C4757}
+.pc{background:#fff;border:1px solid #DDE2EA;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.pc.b{background:#FFF7F6;border-color:#F0B3AC}.pc.p{background:#F4F6F9;border-style:dashed}
+.m{font-size:12px;color:#4A5565;line-height:1.5}.mono{font-family:ui-monospace,Menlo,monospace}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:#4A5565;font-weight:600;padding:10px 12px;border-bottom:1px solid #DDE2EA}td{padding:10px 12px;border-bottom:1px solid #EEF1F5}
+h1,h2,h3,p{margin:0}</style></helmet>
+<div style="width:1280px;min-height:720px;box-sizing:border-box"><div class="bar"><div class="brand"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4FA8" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01M12 10v4"/></svg>Controle de Acesso à Internet</div><div class="row" style="gap:16px"></div></div><div style="display:flex;justify-content:center;padding-top:80px"><div class="card" style="width:400px;display:flex;flex-direction:column;gap:20px;padding:32px">
+<div><h1 style="font-size:24px">Entrar</h1><p class="m" style="margin-top:6px">Acesso exclusivo da máquina autorizada da sala.</p></div>
+<div class="chip ok" style="align-self:flex-start"><span class="dot"></span>Máquina autorizada · Sala F203</div>
+<div class="m mono">IP 10.0.2.15 · MAC AA:BB:CC:00:10:15</div>
+<div><label>Usuário</label><input value="prof.silva"></div><div><label>Senha</label><input type="password" value="••••••••"></div>
+<button class="btn">Entrar</button><p class="m">O IP e o MAC desta máquina são validados no servidor antes de exibir o painel.</p></div></div></div></x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":720}}'>class Component extends DCLogic { renderVals() { return {}; } }</script></body></html>
