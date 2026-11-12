@@ -15,12 +15,14 @@
 COMO INICIAR
 
 Estes passos assumem Ubuntu ou Debian. 
+
 Fase 0: Planejamento da rede (antes de instalar)
 Defina onde fica o servidor (web, banco, gerente e cron na mesma máquina). Ele precisa alcançar o IP de gerência dos switches e ser alcançado pelo PC do professor.
 Fixe o IP de cada PC da sala, por IP estático ou reserva no DHCP. A autorização compara o IP com o banco.
 Mapeie os cabos: anote qual PC está em qual porta de qual switch. Se o switch tiver CLI, show mac address-table ajuda a confirmar. Um erro aqui bloqueia a máquina errada.
 Identifique as portas protegidas: a do PC do professor, a do servidor (data center) e as que ligam um switch a outro.
 Ative o SNMP v2c com community de escrita no switch e restrinja ao IP do servidor. Em um Cisco, por exemplo: snmp-server community SUACOMMUNITY RW. A sintaxe varia conforme a marca e o modelo.
+
 Fase 1: Instalar os pacotes
 bash
 sudo apt install postgresql apache2 php libapache2-mod-php php-pgsql \
