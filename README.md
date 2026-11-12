@@ -24,6 +24,7 @@ COMO INICIAR
 
 ## Fase 1: Instalar os pacotes
 ```bash
+sudo apt update
 sudo apt install postgresql apache2 php libapache2-mod-php php-pgsql \
      openjdk-17-jdk maven snmp cron iproute2
 ```
